@@ -1,3 +1,10 @@
 web1:
   php_extensions:
     - pdo_sqlite
+  network_dirs:
+    storage1:
+      - data
+
+storage1:
+  name: filestore
+  type: nfs
