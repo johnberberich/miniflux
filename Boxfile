@@ -4,6 +4,8 @@ web1:
   network_dirs:
     storage1:
       - data
+  cron:
+    - "0 * * * *": "php cronjob.php"
 
 storage1:
   name: filestore
